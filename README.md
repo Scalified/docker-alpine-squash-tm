@@ -1,12 +1,15 @@
-# Squash TM Docker #
+# Alpine Squash TM Docker #
 
 ## Description
 
-This repository is used for building a [**Docker**](https://www.docker.com) image containing [**Squash TM**](http://www.squashtest.org/en/decouvrir-squash-tm/contenu-statique/outils-et-fonctionnalites/squash-tm-test-management-en)
+This repository is used for building a [**Docker**](https://www.docker.com) image containing [**Squash TM**](http://www.squashtest.org/en/decouvrir-squash-tm/contenu-statique/outils-et-fonctionnalites/squash-tm-test-management-en) running on [**Alpine Linux**](https://alpinelinux.org/)
 
 ## Version
 
-**Squash TM** version is **1.14.2.RELEASE**
+|     #     | Version        |
+|-----------|----------------|
+| Alpine    | 3.4            |
+| Squash TM | 1.14.2.RELEASE |
 
 ## Database
 
