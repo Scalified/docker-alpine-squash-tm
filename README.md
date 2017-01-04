@@ -20,6 +20,12 @@ An image is configured to perform daily backups into:
 
 Data in this directory is kept for the last **7 days**
 
+## Volumes
+
+The following directories are marked as volumes:
+* **`/opt/squash-tm/data`**
+* **`/opt/backup/squash-tm`**
+
 ### How-To
 
 #### Building Squash TM Docker Image
