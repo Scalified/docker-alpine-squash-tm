@@ -4,6 +4,10 @@
 
 This repository is used for building a [**Docker**](https://www.docker.com) image containing [**Squash TM**](http://www.squashtest.org/en/decouvrir-squash-tm/contenu-statique/outils-et-fonctionnalites/squash-tm-test-management-en) running on [**Alpine Linux**](https://alpinelinux.org/)
 
+## Dockerhub
+
+`docker pull scalified/squash-tm`
+
 ## Version
 
 |     #     | Version        |
