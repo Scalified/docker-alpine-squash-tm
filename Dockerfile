@@ -4,7 +4,7 @@ MAINTAINER Vladyslav Baidak
 
 ENV OPT_DIR=/opt
 
-ENV SQUASH_TM_DIST_URL=http://www.squashtest.org/telechargements/send/13-version-stable/245-sqaushtm-1142-targz
+ENV SQUASH_TM_DIST_URL=http://www.squashtest.org/telechargements/send/13-version-stable/254-sqaushtm-1151-targz
 ENV SQUASH_TM_DIR=$OPT_DIR/squash-tm
 ENV SQUASH_TM_BACKUP_DIR=$OPT_DIR/backup/squash-tm
 ENV SQUASH_TM_STDOUT_FILE=/var/log/squash-tm-stdout.log

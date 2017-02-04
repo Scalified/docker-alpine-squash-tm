@@ -6,14 +6,14 @@ This repository is used for building a [**Docker**](https://www.docker.com) imag
 
 ## Dockerhub
 
-`docker pull scalified/squash-tm`
+`docker pull scalified/squash-tm:<version>`
 
 ## Version
 
-|     #     | Version        |
-|-----------|----------------|
-| Alpine    | 3.4            |
-| Squash TM | 1.14.2.RELEASE |
+| Version        | Alpine | Squash TM |
+|----------------|--------|-----------|
+| 1.14.2         | 3.4    | 1.14.2    |
+| 1.15.1, latest | 3.4    | 1.15.1    |
 
 ## Database
 
@@ -30,8 +30,13 @@ Data in this directory is kept for the last **7 days**
 ## Volumes
 
 The following directories are marked as volumes:
+
 * **`/opt/squash-tm/data`**
 * **`/opt/backup/squash-tm`**
+
+* **`/etc/supervisor.d`**
+* **`/var/spool/cron`**
+* **`/etc/periodic`**
 
 ### How-To
 
@@ -46,7 +51,7 @@ To build a **Squash TM** Docker image from scratch, issue the following command:
 To run the **Squash TM** Docker image, use the following commands:
 
 * Pulling from **Dockerhub**:  
-  `docker run -it scalified/squash-tm /bin/sh`
+  `docker run -it scalified/squash-tm:<version> /bin/sh`
 
 * Launching the built image with <tag> tag:  
   `docker run -it <tag> /bin/sh`
