@@ -1,8 +1,7 @@
-FROM alpine:3.4
+FROM scalified/alpine-cron:latest
 
 MAINTAINER Vladyslav Baidak
 
-ENV SUPERVISOR_CONF_DIR=/etc/supervisor.d
 ENV OPT_DIR=/opt
 
 ENV SQUASH_TM_DIST_URL=http://www.squashtest.org/telechargements/send/13-version-stable/245-sqaushtm-1142-targz
@@ -12,15 +11,9 @@ ENV SQUASH_TM_STDOUT_FILE=/var/log/squash-tm-stdout.log
 ENV SQUASH_TM_STDERR_FILE=/var/log/squash-tm-stderr.log
 ENV SQUASH_TM_CRON_BACKUP_SCRIPT_FILE=/etc/periodic/daily/squash-tm-backup
 
-ENV CRON_STDOUT_FILE=/var/log/crond-stdout.log
-ENV CRON_STDERR_FILE=/var/log/crond-stderr.log
-
 RUN apk add --update --no-cache \
-	supervisor \
 	curl \
 	openjdk7
-
-RUN mkdir -p $SUPERVISOR_CONF_DIR
 
 COPY config/supervisor-squash-tm.ini $SUPERVISOR_CONF_DIR
 
