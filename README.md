@@ -17,7 +17,8 @@ This repository is used for building a [**Docker**](https://www.docker.com) imag
 | Version                | Alpine | Squash TM |
 |------------------------|--------|-----------|
 | **1.14.2**             | 3.4    | 1.14.2    |
-| **1.15.1**, **latest** | 3.4    | 1.15.1    |
+| **1.15.1**             | 3.4    | 1.15.1    |
+| **1.15.4**, **latest** | 3.4    | 1.15.4    |
 
 ## Database
 
@@ -29,7 +30,7 @@ An image is configured to perform daily backups into:
 
 **`/opt/backup/squash-tm`**
 
-Data in this directory is kept for the last **7 days**
+Data in this directory is kept for the last **30 days**
 
 ## Volumes
 
