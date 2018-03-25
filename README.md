@@ -10,7 +10,7 @@ This repository is used for building a [**Docker**](https://www.docker.com) imag
 
 ## Dockerhub
 
-**`docker pull scalified/squash-tm:<version>`**
+**`docker pull scalified/alpine-squash-tm:<version>`**
 
 ## Version
 
